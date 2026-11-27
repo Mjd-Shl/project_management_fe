@@ -1,5 +1,5 @@
 import { Archive, ArrowUpRight, Pencil } from 'lucide-react'
-import type { Project } from '../types'
+import type { Project } from '../types/apiTypes'
 import { MemberAvatar } from './ProjectForm'
 
 type ProjectCardProps = {

@@ -24,7 +24,7 @@ import type {
   ProjectValues,
   WorkspaceMember,
   WorkspacePermissions,
-} from './types'
+} from './types/apiTypes'
 
 type ToastMessage = {
   id: number
@@ -76,6 +76,18 @@ export default function App() {
   useEffect(() => {
     void loadWorkspace()
   }, [loadWorkspace])
+
+  useEffect(() => {
+    function onSignOut() {
+      setProjects([])
+      setMembers([])
+      setPermissions(emptyPermissions)
+      setDialogProject(undefined)
+      setPageError('Your session has expired. Please sign in again.')
+    }
+    window.addEventListener('auth:signout', onSignOut)
+    return () => window.removeEventListener('auth:signout', onSignOut)
+  }, [])
 
   const visibleProjects = useMemo(() => {
     const normalizedSearch = search.trim().toLowerCase()

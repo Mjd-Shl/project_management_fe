@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { X } from 'lucide-react'
-import type { Project, ProjectValues, WorkspaceMember } from '../types'
+import type { Project, ProjectValues, WorkspaceMember } from '../types/apiTypes'
 import { ProjectForm } from './ProjectForm'
 
 type ProjectDialogProps = {
