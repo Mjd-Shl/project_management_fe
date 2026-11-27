@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useForm, useWatch } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { projectSchema, suggestProjectKey, type ProjectFormValues } from '../projectSchema'
-import type { Project, ProjectValues, WorkspaceMember } from '../types'
+import type { Project, ProjectValues, WorkspaceMember } from '../types/apiTypes'
 
 type ProjectFormProps = {
   project: Project | null
