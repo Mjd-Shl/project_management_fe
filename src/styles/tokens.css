@@ -1,0 +1,38 @@
+@theme {
+  /* Brand colors */
+  --color-primary: #3b5bdb;
+  --color-primary-hover: #2f49b5;
+
+  /* Neutral colors */
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-content: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #cbd5e1;
+
+  /* Semantic colors */
+  --color-success: #15803d;
+  --color-warning: #92400e;
+  --color-danger: #b91c1c;
+  --color-info: #1d4ed8;
+
+  /* Typography */
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+
+  /* Type scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+
+  /* Spacing */
+  --spacing: 0.25rem;
+
+  /* Border radius */
+  --radius-control: 6px;
+  --radius-card: 12px;
+}
